@@ -13,5 +13,40 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Hello World!"
+        android:id="@+id/txtResult"
+        android:textSize="@dimen/h1"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/linBotton">
+
+        <Button
+            android:text="@string/qr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="clickQRcode"
+            android:id="@+id/button"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="@string/bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:onClick="clickBARcode"
+            android:id="@+id/button2"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/livCode"
+        android:layout_above="@+id/linBotton"
+        android:layout_below="@+id/txtResult"
+        android:layout_margin="15dp" />
 </RelativeLayout>

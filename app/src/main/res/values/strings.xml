@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Read QR and Bar Code</string>
+    <string name="qr">Read QR code</string>
+    <string name="bar">Read Bar Code</string>
 </resources>
